@@ -190,7 +190,6 @@ class Variable(Formula):
 
 
 class LeftImplication(Formula):
-    """ A \ B """
     def __init__(self, antecedent, consequence, linear=True):
         self.antecedent = antecedent
         self.consequence = consequence
@@ -228,7 +227,6 @@ class LeftImplication(Formula):
         return new
 
 class RightImplication(Formula):
-    """ B \ A """
     def __init__(self, antecedent, consequence, linear=True):
         self.antecedent = antecedent
         self.consequence = consequence
