@@ -92,7 +92,7 @@ class EqualitySet(object):
                 res.add(element)
         return res
 
-class Map(collections.MutableMapping):
+class Map(collections.abc.MutableMapping):
     """Very simple map object based on equality rather than hashing"""
     def __init__(self):
         self.mapping = list()
