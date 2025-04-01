@@ -201,7 +201,7 @@ class LeftImplication(Formula):
         return self.antecedent == other.antecedent and self.consequence == other.consequence and self.typ == other.typ
 
     def __str__(self):
-        return '(' + str(self.antecedent) + ' \ ' + str(self.consequence) + ')'
+        return '(' + str(self.antecedent) + ' \\ ' + str(self.consequence) + ')'
 
     def set_linear(self, flag):
         self.linear = flag
